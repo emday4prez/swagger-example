@@ -68,6 +68,25 @@
                     }
                 }
             }
+        },
+        "/restaurant/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "delete": {
+                "tags": ["Restaurants"],
+                "summary": "Delete restaurant from system",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
         }
     },
     "definitions": {
